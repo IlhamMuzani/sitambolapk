@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_tempat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragment_map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Nama Bengkel : "
+                        android:textColor="@color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv_nama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Bengkel A"
+                        android:textColor="@color/black"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Keterangan : "
+                        android:textColor="@color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv_keterangan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="07.00 - 21.00 WIB"
+                        android:textColor="@color/black"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Fasilitas : "
+                        android:textColor="@color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/tv_fasilitas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Tambal Ban"
+                        android:textColor="@color/black"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_marginTop="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/dot_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" />
+
+                <!--                <com.denzcoskun.imageslider.ImageSlider-->
+                <!--                    android:id="@+id/iv_gambar"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="240dp"-->
+                <!--                    android:layout_marginTop="20dp"-->
+                <!--                    app:iss_auto_cycle="true"-->
+                <!--                    app:iss_corner_radius="5"-->
+                <!--                    app:iss_delay="0"-->
+                <!--                    app:iss_error_image="@color/teal_200"-->
+                <!--                    app:iss_period="1000"-->
+                <!--                    app:iss_placeholder="@color/teal_200"-->
+                <!--                    app:iss_selected_dot="@drawable/default_selected_dot"-->
+                <!--                    app:iss_unselected_dot="@drawable/default_unselected_dot" />-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

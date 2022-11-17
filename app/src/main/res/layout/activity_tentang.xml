@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".ui.tentang.TentangActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/amar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/roboto"
+                android:text="Nama"
+                android:textColor="@color/color1"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="@color/color1"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/roboto"
+                android:text="Abdul Aziz Aamar"
+                android:textColor="@color/color1"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/roboto"
+                android:text="Nim"
+                android:textColor="@color/color1"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="@color/color1"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/roboto"
+                android:text="19243001"
+                android:textColor="@color/color1"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/roboto"
+                android:text="Program Studi"
+                android:textColor="@color/color1"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="@color/color1"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/roboto"
+                android:text="D3 Management Informatika"
+                android:textColor="@color/color1"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/roboto"
+                android:lineSpacingMultiplier="1.2"
+                android:text="Judul Tugas Akhir"
+                android:textColor="@color/color1"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text=":"
+                android:textColor="@color/color1"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="@font/roboto"
+                android:justificationMode="inter_word"
+                android:lineSpacingMultiplier="1.2"
+                android:text="Perancangan Sistem Informasi Geografis Pencarian Tambal Ban Terdekat Berbasis Android di Kota Tegal"
+                android:textColor="@color/color1"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

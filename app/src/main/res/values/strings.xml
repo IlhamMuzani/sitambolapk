@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SI TambOl</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_searching">Search</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="app_kecamatan">Pada menu Kecamatan menampilkan beberapa Kecamatan yang ada di kota Tegal, jika kita memilih salah satu Kecamatan maka akan menampilkan beberapa Kelurahan yang ada di Kecamatan tersebut. Kemudian jika kita memilih salah satu Kelurahan maka akan menampilkan beberapa tambal ban yang ada di Kelurahan tersebut</string>
+    <string name="app_kelurahan">Pada menu Kelurahan menampilkan semua kelurahan yang ada di kota Tegal</string>
+    <string name="app_tambalban">Pada menu Tambal ban menampilkan semua tambal ban yang telah didaftarkan di aplikasi sitambol di kota Tegal</string>
+    <string name="app_penggunaan">Pada menu Penggunaan aplikasi menampilkan beberapa cara penggunaan pada aplikasi sitambol</string>
+    <string name="app_tentang">Pada menu Tentang aplikasi menampilkan pembuat aplikasi sitambol</string>
+</resources>

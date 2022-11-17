@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".ui.home.HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="SITAMBOL"
+            android:textColor="@color/color1"
+            android:textSize="22sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto"
+            android:text="Sistem Informasi Tambal Ban Online"
+            android:textColor="@color/color2"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_kecamatan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        tools:ignore="UseCompoundDrawables,UselessParent">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_kecamatan"
+                            app:riv_corner_radius="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+                            android:importantForAutofill="no"
+                            android:text="Kecamatan"
+                            android:textColor="@color/color1"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_kelurahan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        tools:ignore="UseCompoundDrawables,UselessParent">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_kelurahan"
+                            app:riv_corner_radius="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+                            android:importantForAutofill="no"
+                            android:text="Kelurahan"
+                            android:textColor="@color/color1"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_bengkel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        tools:ignore="UseCompoundDrawables,UselessParent">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_tambal_ban"
+                            app:riv_corner_radius="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+                            android:importantForAutofill="no"
+                            android:text="Tambal Ban"
+                            android:textColor="@color/color1"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_penggunaan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="15dp"
+                        tools:ignore="UseCompoundDrawables,UselessParent">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/use"
+                            app:riv_corner_radius="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+                            android:importantForAutofill="no"
+                            android:text="Penggunaan"
+                            android:textColor="@color/color1"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_tentang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="- Tentang Aplikasi -"
+                android:textColor="@color/color1"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

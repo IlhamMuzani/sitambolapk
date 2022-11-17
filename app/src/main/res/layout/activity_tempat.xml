@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        android:paddingTop="15dp">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/layout_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background_tempat"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_search_24"
+                app:tint="@color/color1"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_vertical"
+                android:hint="Cari Kelurahan"
+                android:imeOptions="actionSearch"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textColor="@color/color1"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_tempat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_tempat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:itemCount="5"
+            tools:listitem="@layout/adapter_tempat" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:paddingHorizontal="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_tempat"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15dp"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/icon_bengkel"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto"
+                android:text="Gagal memuat data"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.penggunaan.PenggunaanActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imvImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="5dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_kecamatan"
+                    app:riv_corner_radius="10dp"
+                    tools:ignore="MissingClass" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Kecamatan"
+                            android:textColor="@color/color1"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/roboto"
+                            android:text="@string/app_kecamatan"
+                            android:textColor="@color/color1" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/teal_200" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="5dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_kelurahan"
+                    app:riv_corner_radius="10dp"
+                    tools:ignore="MissingClass" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Kelurahan"
+                            android:textColor="@color/color1"
+                            android:fontFamily="@font/roboto_medium"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/roboto"
+                            android:text="@string/app_kelurahan"
+                            android:textColor="@color/color1" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/teal_200" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="5dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_tambal_ban"
+                    app:riv_corner_radius="10dp"
+                    tools:ignore="MissingClass" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Bengkel"
+                            android:fontFamily="@font/roboto_medium"
+                            android:textColor="@color/color1"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/roboto"
+                            android:text="@string/app_tambalban"
+                            android:textColor="@color/color1" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/teal_200" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="5dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/use"
+                    app:riv_corner_radius="10dp"
+                    tools:ignore="MissingClass" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Penggunaan Aplikasi"
+                            android:textColor="@color/color1"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/roboto"
+                            android:text="@string/app_penggunaan"
+                            android:textColor="@color/color1" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/teal_200" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="5dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_tentang"
+                    app:riv_corner_radius="10dp"
+                    tools:ignore="MissingClass" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Tentang Aplikasi"
+                            android:textColor="@color/color1"
+                            android:fontFamily="@font/roboto_medium"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="@string/app_tentang"
+                            android:textColor="@color/color1"
+                            android:fontFamily="@font/roboto"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/teal_200" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
